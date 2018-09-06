@@ -2,7 +2,7 @@
  * @Author: liar
  * @Date: 2018-09-04 00:30:07
  * @Last Modified by: liar
- * @Last Modified time: 2018-09-06 10:10:33
+ * @Last Modified time: 2018-09-06 13:28:51
  */
 var webpack = require('webpack');
 var baseWebpackConfig = require('./webpack.base.conf');
@@ -15,7 +15,7 @@ var webpackHotMiddlewareConf = 'webpack-hot-middleware/client?path=http://localh
 
 module.exports = merge(baseWebpackConfig, {
   entry: {
-    app: ['./webpackBuildDemo/myDemo/main.js', webpackHotMiddlewareConf]
+    app: ['./webpackBuildDemo/main.js', webpackHotMiddlewareConf]
   },
   module: {
     rules: utils.styleLoaders({
