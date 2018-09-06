@@ -2,7 +2,7 @@
  * @Author: liar
  * @Date: 2018-09-06 09:59:57
  * @Last Modified by: liar
- * @Last Modified time: 2018-09-06 10:32:29
+ * @Last Modified time: 2018-09-06 11:28:18
  */
 var config = require('../config');
 /**
@@ -58,7 +58,7 @@ var app = express();
 app.use(devMiddleware);
 app.use(devHotMiddleware);
 
-devHotMiddleware.waitUntilValid(() => {
+devMiddleware.waitUntilValid(() => {
   if (autoOpenBowser) opn(uri, { app: 'chrome' });
   console.log('webpack dev');
 });

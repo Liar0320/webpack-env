@@ -1,7 +1,7 @@
 ## 开发环境
     npm run start 
         自定运行 node build/dev-server.js
-        手动运行 npx node build/dev-server.js  npx 在当前环境包中运行 
+        手动运行 npx node build/dev-server.js
 # 1.获取配置参数 
      /config
     设置 process.env.NODE_ENV = 配置的
@@ -21,4 +21,6 @@ devHotMiddleware = require('webpack-hot-middleware')(compiler,options)
 # 5.将 中间件 和 热模块加载 添加到 server上
 app.use(devMiddleware);
 app.use(devHotMiddleware);
+
+## 生产环境
 
